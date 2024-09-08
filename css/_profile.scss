@@ -1,0 +1,61 @@
+.profile{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width: 90%;
+    margin: 0 auto;
+
+    .title{
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        h2{
+            font-size: 32px;
+            color: #ebda03;
+        }
+        h3{
+            font-size: 18px;
+            color: #e0e0e06e;
+            margin-top: -5px;
+            padding-left: 20px;
+        }
+    }
+
+    .profile_flexbox{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+        .icon{
+            width: 35%;
+            max-width: 250px;
+            height: auto;
+            margin: 0 auto;
+
+            img{
+                width: 100%;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+
+        .profile_content{
+            width: 60%;
+            max-width: 400px;
+            margin: 0 auto;
+
+            .profile_detail{
+                h4{
+                    font-size: 22px;
+                    color: #ebdc03;
+                }
+                p{
+                    font-size: 13px;
+                    color:#e0e0e0;
+                    margin-top: 20px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+}

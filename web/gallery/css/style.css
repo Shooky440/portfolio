@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.container {
+	max-width: 1000px;
+	min-width: 640px;
+	margin: auto;
+}
+
+/*header*/
+
+.header {
+	color: #707070;
+	width: 100%;
+	display: flex;
+	margin: auto;
+	box-sizing: border-box;
+	justify-content: space-between;
+}
+
+header h1 {
+	margin-top: 40px;
+	margin-left: 40px;
+	margin-right: 25px;
+	font-size: 24px;
+	font-family: "Times New Roman Bold";
+	text-align: left;
+	white-space: nowrap;
+}
+
+
+
+header ul {
+	padding-top: 58px;
+	padding-bottom: 58px;
+	display: flex;
+	text-align: right;
+}
+
+header li {
+	font-family: "Times New Roman Regular";
+	font-size: 16px;
+	list-style: none;
+}
+
+header li + li {
+	margin-left: 20px; 
+}
+
+header li:last-child {
+	margin-right: 40px;
+}
+
+header a {
+	text-decoration: none;
+	color: #707070;
+}
+
+
+
+/*main*/
+
+
+
+
+/*mainvisual*/
+
+.mainvisual{
+	margin:auto;
+	padding-left: 40px;
+	padding-right: 40px;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.mainvisual_img img {
+	width: 100%;
+	height: auto;
+}
+
+.mainvisual_img +.mainvisual_img{
+	margin-left: 40px;
+}
+
+
+
+/*fictionphotographer*/
+
+
+.fictionphotographer {
+	color: #707070;
+	font-size: 12px;
+	margin-top: 80px;
+	margin-bottom: 70px;
+	text-align: center;
+}
+
+
+/*contentsBlock*/
+
+
+.contentsBlock_image img{
+   	width:240px;
+	height: 160px;
+    vertical-align: bottom;
+}
+
+.contentsBlock {
+	display: flex;
+	max-width: 540px;
+	margin: auto;
+	margin-bottom: 20px;
+	width: 100%;
+	height: auto;
+}
+
+.contentsBlock h2 {
+	color: #707070;
+	font-family: "Times New Roman, Regular";
+}
+
+.contentsBlock_discription {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.contentsBlock_image {
+	flex: 1;
+	margin-left: 20px;
+}
+
+.contentsBlock_image {
+	width: 240px;
+}
+
+.contentsBlock_reverse {
+	flex-direction: row-reverse;
+}
+
+.contentsBlock_reverse .contentsBlock_image {
+	text-align: right;
+	margin-left: 0;
+	margin-right: 20px;
+}
+
+.contentsBlock_reverse .contentsBlock_discription {
+	justify-content: flex-start;
+}
+
+
+
+
+.link {
+	border: solid 1px #707070;
+	width: 90px;
+	height: 40px;
+	font-size: 14px;
+	display: grid;
+	place-items: center;
+	margin-top: 10px;
+	box-sizing: border-box;
+	text-decoration: none;
+	color: #707070;
+	font-family: "Times New Roman, Regular";
+}
+
+
+.link:hover {
+    color: #ffffff;
+    background-color: #707070;
+    cursor: pointer;
+}
+
+
+
+
+.infomation h2 {
+	color: #707070;
+	margin-top: 125px;
+	margin-bottom: 20px;
+	text-align: center;
+	font-family: "Times New Roman, Regular";
+}
+
+.infomation p {
+	color: #707070;
+	text-align: center;
+	font-size: 12px;
+	margin-bottom: 110px;
+	font-family: "Yu Mincho, Regular";
+}
+
+
+.contactlink {
+	text-align: center;
+	padding: 13px;
+	border: solid 1px #707070;
+	font-size: 14px;
+	text-decoration: none;
+	color: #707070;
+	font-family: "Times New Roman, Regular";
+}
+
+.contactlink:hover {
+    color: #ffffff;
+    background-color: #707070;
+    cursor: pointer;
+}
+
+
+/*footer*/
+
+footer p {
+	color: #707070;
+	margin-bottom: 20px;
+	margin-top: 120px;
+	font-size: 12px;
+	text-align: center;
+	font-family: "Times New Roman, Regular";
+}

@@ -1,0 +1,183 @@
+.header{
+    width: 100vw;
+    max-width: 1000px;
+    margin: 0 auto;
+
+    .menubar{
+        height: 60px;
+        background-color: #393b42;
+        z-index: 10;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        h1{
+            font-size: 24px;
+            color: #ebda03;
+            margin-left: 20px;
+        }
+
+        .menu{
+            margin-right: 20px;
+
+            .menu_list{
+                display: flex;
+                list-style: none;
+
+                li{
+                    list-style: none;
+                    
+                    a{
+                        text-decoration: none;
+                        color: #ebda03;
+                        font-size: 18px;
+                    }
+                    a:hover{
+                        color: #ebdc0371;
+                    }
+                }
+
+                li+li{
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+
+
+    .mv{
+        position: relative;
+        z-index: 0;
+        width: 100%;
+        height: 70vh;
+        overflow: hidden;
+        box-sizing: border-box;
+
+        .scroll-infinity__wrap{
+            display: flex;
+            box-sizing: border-box;
+            overflow: hidden;
+            width: 100%;
+            gap: 0 40px;
+            transform: rotate(20deg) translate(-40% ,-10%);
+
+            @media only screen and (max-width:600px){
+                gap: 0 20px;
+                transform: rotate(20deg) translate(-50%, -10%);
+            }
+
+
+            ul{
+                list-style: none;
+            }
+
+            .scroll-infinity__list {
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                width: 30vw;
+                min-width: 150px;
+
+                .list_img{
+                    width:100%;
+
+                    img{
+                        width: 100%;
+                    }
+                }
+
+                li+li{
+                    margin-top: 20px;
+                }
+            }
+
+            .scroll-infinity__list--up ul:first-child  {
+                animation: infinity-scroll-up 50s -25s infinite linear;
+            }
+            .scroll-infinity__list--up ul:last-child  {
+                animation: infinity-scroll-upup 50s infinite linear;
+            }
+            .scroll-infinity__list--down ul:first-child {
+                animation: infinity-scroll-down 50s infinite linear;
+            }
+            .scroll-infinity__list--down ul:last-child {
+                animation: infinity-scroll-downdown 50s -25s infinite linear;
+            }
+
+            @keyframes infinity-scroll-up {
+                0% {
+                  transform: translateY(100%);
+                }
+                  to {
+                  transform: translateY(-100%);
+                }
+            }
+            @keyframes infinity-scroll-upup {
+                0% {
+                  transform: translateY(0);
+                }
+                  to {
+                  transform: translateY(-200%);
+                }
+            }
+
+            @keyframes infinity-scroll-down {
+                0% {
+                  transform: translateY(-100%);
+                }
+                  to {
+                  transform: translateY(100%);
+                }
+            }
+            @keyframes infinity-scroll-downdown {
+                0% {
+                  transform: translateY(-200%);
+                }
+                  to {
+                  transform: translateY(0);
+                }
+            }
+        }
+    }
+
+    .mv::after{
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.2);
+    }
+}
+
+.allcontainer{
+    width: 100vw;
+    margin: 0 auto;
+    background-color: #393b42;
+}
+
+.main_container{
+    width: 100vw;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #393b42;
+}
+
+/*footer*/
+footer{
+    width: 100vw;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 0;
+    background-color: #393b42;
+
+    .copyright{
+        text-align: center;
+        p{
+            font-size: 12px;
+            margin: 0 auto;
+            color: #ebda03;
+        }
+    }
+}
